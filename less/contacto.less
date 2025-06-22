@@ -1,0 +1,43 @@
+#Contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: @unit4;
+    .shadow();
+    border: 1px solid #000;
+    .roundLarge();
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: @textColor_secundario;
+            display: flex;
+            gap: @unit3;
+            align-items: center;
+            justify-content: space-between;
+            .p-3();
+        }
+    }
+
+    .noLinkContact {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.itemsC:hover{
+    background-color: @background_secundario;
+    .roundLarge();
+    padding: 3px;
+    .shadow();
+}

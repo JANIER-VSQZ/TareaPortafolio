@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: @background_secundario;
+    color: @textColor_principal;
+    gap: @unit8;
+    flex-wrap: wrap;
+    .p-5();
+    img{
+        .round50();
+        .shadow();
+    }
+    .datos{
+        text-align: center;
+        color: @textColor_secundario;
+        h1{
+            .p-y-4();
+            .text-extra-large();
+        }
+        p{
+            .text-large();
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            li{
+                .p-y-3();
+                a{
+                    text-decoration: none;
+                    color: @textColor_secundario;
+                    .text-large();
+                }
+            }
+        }
+    }
+    #menu-hamburguesa{
+        display: none;
+    }
+}

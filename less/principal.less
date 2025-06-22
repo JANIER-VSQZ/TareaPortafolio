@@ -1,0 +1,91 @@
+@import "variables.less";
+@import "header.less";
+@import "contacto.less";
+@import "footer.less";
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-color: @background_principal;
+    color: @textColor_principal;
+
+    .contenido {
+        section {
+            .p-5();
+        }
+
+        max-width: 1024px;
+        padding: auto;
+        margin: auto;
+
+        .biografia {
+            text-align: justify;
+
+            h2 {
+                .text-large();
+            }
+
+            p {
+                .text-normal();
+            }
+        }
+
+        .proyectos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .proyecto {
+                .shadow();
+                .m-4();
+                background-color: @background_terciario;
+                width: 300px;
+                .roundLarge();
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: @textColor_terciario;
+                overflow: hidden;
+
+                img{
+                    .imgCover();
+                }
+
+                .link {
+                    width: 200px;
+                    height: 40px;
+                    .roundLarge();
+                    box-shadow: 1px 4px 8px black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: @background_principal;
+                    .m-4();
+
+                    &:hover {
+                        background-color: @background_secundario;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        .text-normal();
+                        color: @textColor_terciario;
+                    }
+                }
+            }
+        }
+    }
+
+}
