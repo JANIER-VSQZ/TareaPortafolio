@@ -11,6 +11,9 @@ header{
     img{
         .round50();
         .shadow();
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     .datos{
         text-align: center;
@@ -32,6 +35,12 @@ header{
                     text-decoration: none;
                     color: @textColor_secundario;
                     .text-large();
+                    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+                    &:hover{
+                        background-color: @background_principal;
+                        .roundLarge();
+                        .shadow();
+                    }
                 }
             }
         }
